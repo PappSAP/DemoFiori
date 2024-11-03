@@ -1,26 +1,25 @@
 <mvc:View
-    controllerName="demofiori.controller.Vista1"
+    controllerName="demofiori.controller.Vista11"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m"
 >
-    <Page title="vista 1">
+    <Page
+        title="Vista 11"
+    >
         <content>
-            <Panel headerText="Menu  Panel">
                 <VBox class="sapUiTinyMargin">
                     <GenericTile
-                        header="Pantalla inicial"
-                        press="onPressVista1"
+                        header="Pantalla inicialVista 11"
                     >
                         <TileContent>
                             <Label
-                                text="Pantalla inicial que lleva a dos pantallas más"
+                                text="sub pantalla"
                                 wrapping="true"
                             />
                         </TileContent>
                     </GenericTile>
                 </VBox>
-            </Panel>
         </content>
     </Page>
 </mvc:View>

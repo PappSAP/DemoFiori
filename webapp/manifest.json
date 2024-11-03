@@ -77,16 +77,34 @@
           "target": [
             "TargetVista1"
           ]
+        },
+
+        {
+          "name": "RouteVista11",
+          "pattern": "",
+          "target": [
+            "TargetVista11"
+          ]
         }
+
       ],
       "targets": {
-        "TargetVista1": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "Vista1",
-          "viewName": "Vista1"
-        }
+          "TargetVista1": {
+            "viewType": "XML",
+            "transition": "slide",
+            "clearControlAggregation": false,
+            "viewId": "Vista1",
+            "viewName": "Vista1"
+          },
+
+          "TargetVista11": {
+            "viewType": "XML",
+            "transition": "slide",
+            "clearControlAggregation": false,
+            "viewId": "Main",
+            "viewName": "Vista11"
+          }
+
       }
     },
     "rootView": {
