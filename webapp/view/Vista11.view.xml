@@ -13,10 +13,8 @@
                         header="Pantalla inicialVista 11"
                     >
                         <TileContent>
-                            <Label
-                                text="sub pantalla"
-                                wrapping="true"
-                            />
+                            <Label text="sub pantalla"/>
+                            
                         </TileContent>
                     </GenericTile>
                 </VBox>

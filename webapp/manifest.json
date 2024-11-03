@@ -81,7 +81,7 @@
 
         {
           "name": "RouteVista11",
-          "pattern": "",
+          "pattern": "RouteVista11",
           "target": [
             "TargetVista11"
           ]
