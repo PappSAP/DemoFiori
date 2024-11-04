@@ -4,19 +4,13 @@
     displayBlock="true"
     xmlns="sap.m"
 >
-    <Page
-        title="Vista 11"
-    >
+
+    <Page title="Vista 11-Productos">
         <content>
                 <VBox class="sapUiTinyMargin">
-                    <GenericTile
-                        header="Pantalla inicialVista 11"
-                    >
-                        <TileContent>
-                            <Label text="sub pantalla"/>
-                            
-                        </TileContent>
-                    </GenericTile>
+                    <List headerText="Productos" items ="{Products>/}" mode="SingleSelectMaster" itemPress="onPressProduct">
+                        <StandardListItem title="{Products>Name}"  description="{Products>Description}" icon="{Products>PicUrl}" type="Active"/>
+                    </List>
                 </VBox>
         </content>
     </Page>
