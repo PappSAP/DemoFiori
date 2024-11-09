@@ -14,6 +14,12 @@
       "id": "@sap/generator-fiori:basic",
       "version": "1.15.1",
       "toolsId": "6d159383-4c7c-4e04-a20c-4e5fd01be6e0"
+    },
+    "dataSources": {
+      "products-data": {
+        "uri": "LocalData/LocalTableProducts.json",
+        "type": "JSON"
+      }
     }
   },
   "sap.ui": {
@@ -51,6 +57,11 @@
         "settings": {
           "bundleName": "demofiori.i18n.i18n"
         }
+      },
+
+      "mProducts" :{
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource" : "products-data"
       }
     },
     "resources": {
@@ -78,7 +89,6 @@
             "TargetVista1"
           ]
         },
-
         {
           "name": "RouteVista11",
           "pattern": "RouteVista11",
@@ -86,25 +96,22 @@
             "TargetVista11"
           ]
         }
-
       ],
       "targets": {
-          "TargetVista1": {
-            "viewType": "XML",
-            "transition": "slide",
-            "clearControlAggregation": false,
-            "viewId": "Vista1",
-            "viewName": "Vista1"
-          },
-
-          "TargetVista11": {
-            "viewType": "XML",
-            "transition": "slide",
-            "clearControlAggregation": false,
-            "viewId": "Main",
-            "viewName": "Vista11"
-          }
-
+        "TargetVista1": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Vista1",
+          "viewName": "Vista1"
+        },
+        "TargetVista11": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Main",
+          "viewName": "Vista11"
+        }
       }
     },
     "rootView": {

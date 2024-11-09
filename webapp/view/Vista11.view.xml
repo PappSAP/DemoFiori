@@ -8,8 +8,13 @@
     <Page title="Vista 11-Productos">
         <content>
                 <VBox class="sapUiTinyMargin">
-                    <List headerText="Productos" items ="{Products>/}" mode="SingleSelectMaster" itemPress="onPressProduct">
-                        <StandardListItem title="{Products>Name}"  description="{Products>Description}" icon="{Products>PicUrl}" type="Active"/>
+                    <List   headerText="Productos" 
+                            items ="{path: 'mProducts>/TableProducts'}" 
+                            mode="SingleSelectMaster" 
+                            itemPress="onPressProduct"
+                            growing="true"
+                            growingThreshold="5">
+                        <StandardListItem title="{mProducts>Name}"  description="{mProducts>Description}" icon="{mProducts>PicUrl}" type="Active"/>
                     </List>
                 </VBox>
         </content>
