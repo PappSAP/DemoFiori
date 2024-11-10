@@ -19,6 +19,10 @@
       "products-data": {
         "uri": "LocalData/LocalTableProducts.json",
         "type": "JSON"
+      },
+      "tile-data": {
+        "uri": "LocalData/LocalTiles.json",
+        "type": "JSON"
       }
     }
   },
@@ -62,7 +66,14 @@
       "mProducts" :{
         "type": "sap.ui.model.json.JSONModel",
         "dataSource" : "products-data"
+      },
+      
+      "mTiles" :{
+        "type": "sap.ui.model.json.JSONModel",
+        "dataSource" : "tile-data"
       }
+
+
     },
     "resources": {
       "css": [
@@ -95,6 +106,13 @@
           "target": [
             "TargetVista11"
           ]
+        },
+        {
+          "name": "RouteVista21",
+          "pattern": "RouteVista21",
+          "target": [
+            "TargetVista21"
+          ]
         }
       ],
       "targets": {
@@ -111,7 +129,15 @@
           "clearControlAggregation": false,
           "viewId": "Main",
           "viewName": "Vista11"
+        },
+        "TargetVista21": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Main",
+          "viewName": "Vista21"
         }
+        
       }
     },
     "rootView": {

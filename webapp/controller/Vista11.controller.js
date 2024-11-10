@@ -11,7 +11,7 @@ sap.ui.define([
 
     return Controller.extend("appviewcatalog.controller.List", {
         onInit: function () {
-            console.log("soy el evento onInit del controller List");
+           
             
         },
 

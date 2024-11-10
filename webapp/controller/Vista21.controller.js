@@ -11,13 +11,13 @@ sap.ui.define([
 function (Controller,UIComponent) {
     "use strict";
 
-    return Controller.extend("demofiori.controller.Vista1", {
+    return Controller.extend("demofiori.controller.Vista21", {
         onInit: function () {
 
         },
-        onPressVista1: function() {
+        onPressVista21: function() {
             let oRouter = UIComponent.getRouterFor(this);
-            oRouter.navTo("RouteVista21");
+            oRouter.navTo("RouteVista11");
 
 
         }

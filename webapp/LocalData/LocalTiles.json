@@ -1,0 +1,10 @@
+{
+    "TileGroups": [
+        {
+            "Title": "Tílulos Tile",
+            "Descripction": "Visualización Tile",
+            "Icon": "sap-icon://List",
+            "View": "viename"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+<mvc:View
+    controllerName="demofiori.controller.Vista21"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page title="vista 21">
+        <content>
+            <Panel headerText="Menu  Panel">
+                <VBox class="sapUiTinyMargin">
+                    <GenericTile
+                        header="Pantalla inicial 2"
+                        press="onPressVista21"
+                    >
+                        <TileContent>
+                            <Label
+                                text="Pantalla 21"
+                                wrapping="true"
+                            />
+                        </TileContent>
+                    </GenericTile>
+                </VBox>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>
